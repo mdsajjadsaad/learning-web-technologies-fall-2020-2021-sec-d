@@ -1,9 +1,23 @@
+<?php
+
+if(isset($_REQUEST['submit'])){
+    
+    if (isset($_POST['gender'])){echo "Gender: ".$_POST['gender'];}   
+      
+else{echo "Empty";}
+  
+    
+}
+
+
+?>
 <html>
     <head><title>HTML Form - Gender</title>
 	</head>
     <body>
-      <form method="post" action="genderCheck.php">
-        
+       
+           <form method="post" action="gender.php">
+      
         <fieldset style="width:200px">
             
             <legend><b>GENDER</b></legend>
@@ -14,7 +28,7 @@
             
         </fieldset>
         <br>
-        <input type="submit" value="Submit">
+        <input type="submit" name="submit" value="Submit">
         </form>
     </body>
 </html>
