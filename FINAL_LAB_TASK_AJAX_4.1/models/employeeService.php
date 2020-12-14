@@ -43,8 +43,6 @@
 
         $row=mysqli_fetch_assoc($result);
 
-        //setcookie('type',$row['type'],time()+300,'/');
-
         if(count($row)>0)
         {
             return $row;
